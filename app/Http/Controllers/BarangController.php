@@ -55,7 +55,8 @@ class BarangController extends Controller
             'harga' => 'Harga barang harus diisi!',
             'deskripsi' => 'Deskripsi barang harus diisi!',
             'satuan' => 'Satuan barang harus diisi!',
-            'harga|numeric' => 'Isi dengan angka!',
+            'kode_brg.unique' => 'Kode barang sudah ada!',
+            'harga.numeric' => 'Isi dengan angka!',
         ]);
 
         if ($validator->fails()) {
@@ -125,7 +126,8 @@ class BarangController extends Controller
             'harga' => 'Harga barang harus diisi!',
             'deskripsi' => 'Deskripsi barang harus diisi!',
             'satuan' => 'Satuan barang harus diisi!',
-            'harga|numeric' => 'Isi dengan angka!',
+            'kode_brg.unique' => 'Kode barang sudah ada!',
+            'harga.numeric' => 'Isi dengan angka!',
         ]);
 
         if ($validator->fails()) {
