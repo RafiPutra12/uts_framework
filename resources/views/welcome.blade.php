@@ -22,7 +22,7 @@
                     <div class="menu">
                         <a href="{{ route('profile_page') }}">Profile</a>
                         <a href="{{ route('barang.index') }}">Data Barang</a>
-                        <a href="">Github</a>
+                        <a href="https://github.com/RafiPutra12">Github</a>
                     </div>
                 </div>
                 <div class="hero-center">

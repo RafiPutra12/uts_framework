@@ -137,7 +137,7 @@ class BarangController extends Controller
         $satuan_id = $request->old('satuan');
 
         // ELOQUENT
-        $barang = Barang::find($id);;
+        $barang = Barang::find($id);
         $barang->kode_barang = $request->kode_brg;
         $barang->nama_barang = $request->nama;
         $barang->harga_barang = $request->harga;
