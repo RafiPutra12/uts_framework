@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(27, 26, 26);
+    font-family: "Roboto Slab", serif;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+  }
+
+  .img-responsive {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .logo {
+    margin-top: 20px;
+  }
+  .header .logo a {
+    color: beige;
+  }
+  .header .menu {
+    margin-top: 20px;
+  }
+  .header .menu a {
+    color: beige;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .header .menu a:hover{
+    color: rgba(255, 255, 255, 0.801);
+  }
+
+  .hero {
+    background: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80) no-repeat fixed;
+    background-size: cover;
+  }
+  .hero-center {
+    width: 70%;
+    padding: 18% 0;
+    margin: auto;
+    text-align: center;
+  }
+  .hero-center h2 {
+    font-size: 4em;
+    color: beige;
+  }
+  .hero-center p {
+    color: white;
+    line-height: 180%;
+  }
+
+  .overlay {
+    width: 100%;
+    position: relative;
+    background: rgba(11, 11, 11, 0.505);
+  }
