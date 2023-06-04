@@ -67,7 +67,7 @@ class BarangController extends Controller
         $nama_barang = $request->old('nama');
         $harga_barang = $request->old('harga');
         $deskripsi_barang = $request->old('deskripsi');
-        $satuan_barang = $request->old('satuan');
+        $satuan_id = $request->old('satuan');
 
         // ELOQUENT
         $barang = New barang;
@@ -75,7 +75,7 @@ class BarangController extends Controller
         $barang->nama_barang = $request->nama;
         $barang->harga_barang = $request->harga;
         $barang->deskripsi_barang = $request->deskripsi;
-        $barang->satuan_barang = $request->satuan;
+        $barang->satuan_id = $request->satuan;
         $barang->save();
 
         return redirect()->route('barang.index');
@@ -134,7 +134,7 @@ class BarangController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        $satuan_barang = $request->old('satuan');
+        $satuan_id = $request->old('satuan');
 
         // ELOQUENT
         $barang = Barang::find($id);;
@@ -142,7 +142,7 @@ class BarangController extends Controller
         $barang->nama_barang = $request->nama;
         $barang->harga_barang = $request->harga;
         $barang->deskripsi_barang = $request->deskripsi;
-        $barang->satuan_barang = $request->satuan;
+        $barang->satuan_id = $request->satuan;
         $barang->save();
 
         return redirect()->route('barang.index');

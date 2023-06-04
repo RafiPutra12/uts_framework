@@ -32,7 +32,7 @@
                             <td>{{ $barang->nama_barang }}</td>
                             <td>{{ $barang->deskripsi_barang }}</td>
                             <td>{{ $barang->harga_barang }}</td>
-                            <td>{{ $barang->satuan->nama_satuan}}</td>
+                            <td>{{ $barang->satuan->nama_satuan }}</td>
                             <td>@include('barang.actions')</td>
                         </tr>
                     @endforeach

@@ -19,21 +19,21 @@ class BarangSeeder extends Seeder
                 'nama_barang' => 'Beras Sabit 5kg',
                 'harga_barang' => '50000',
                 'deskripsi_Barang'=> 'Beras kualitas premium dengan harga miring',
-                'satuan_barang' => 1
+                'satuan_id' => 1
             ],
             [
                 'kode_barang' => '112TCB',
                 'nama_barang' => 'Teh Cangkir Box',
                 'harga_barang' => '20000',
                 'deskripsi_Barang'=> 'Lebih enak daripada merek teh sebelah',
-                'satuan_barang' => 2
+                'satuan_id' => 2
             ],
             [
                 'kode_barang' => '113T25',
                 'nama_barang' => 'Titato 250gr',
                 'harga_barang' => '5000',
                 'deskripsi_Barang'=> 'Titato? kok kyk pernah denger yaa',
-                'satuan_barang' => 3
+                'satuan_id' => 3
             ],
         ]);
     }

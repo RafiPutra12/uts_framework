@@ -61,7 +61,7 @@
                                     if ($errors->any())
                                         $selected = old('satuan');
                                     else
-                                        $selected = $barang->satuan_barang;
+                                        $selected = $barang->satuan_id;
                                 @endphp
 
                                 @foreach ($satuan as $satuan)

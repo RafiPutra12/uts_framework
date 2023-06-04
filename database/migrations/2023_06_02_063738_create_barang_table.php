@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('nama_barang');
             $table->string('harga_barang');
             $table->string('deskripsi_barang');
-            $table->unsignedBigInteger('satuan_barang');
-            $table->foreign('satuan_barang')->references('id')->on('satuan');
+            $table->unsignedBigInteger('satuan_id');
+            $table->foreign('satuan_id')->references('id')->on('satuan');
             $table->timestamps();
         });
     }
